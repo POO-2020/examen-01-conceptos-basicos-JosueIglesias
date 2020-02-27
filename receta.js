@@ -28,16 +28,4 @@ export default class Receta{
         })
         console.log(`Costo total: $${costoTotal}`)
     }
-
-
-    /*registrarCitas(cita){
-        this.citas.push(cita)
-    }
-
-    listarCitas(){
-        this.citas.forEach((cita, i )=> {
-            console.log(`${i + 1} ${cita.getPerfil()}`)
-        })
-    }
-}*/
 }
