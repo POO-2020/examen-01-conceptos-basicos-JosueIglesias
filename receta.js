@@ -5,9 +5,6 @@ export default class Receta{
         this.autor = autor
         this.ingredientes = new Array 
     }
-
-    
-
     agregarIngrediente(ingrediente){
         this.ingredientes.push(ingrediente)
     }
@@ -17,13 +14,19 @@ export default class Receta{
         this.ingredientes.forEach((ingrediente, i)=> {
             console.log(`${i + 1} ${ingrediente.getDescripcion()}`)
         })
+        
     }
 
     getNumeroIngredientes(){
-        return`El numero de ingredientes son: `
+        console.log(`Numero de ingredientes: ${this.ingredientes.length}`)
+    }
+
+    getCostoTotal(){
+        let costoTotal = 0
         this.ingredientes.forEach((ingrediente, i)=> {
-            
+            costoTotal = costoTotal + ingrediente.costo
         })
+        console.log(`Costo total: $${costoTotal}`)
     }
 
 

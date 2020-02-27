@@ -28,6 +28,8 @@ class Main {
         this.receta1.agregarIngrediente(this.ingrediente1)
         this.receta1.agregarIngrediente(this.ingrediente2)
         this.receta1.mostrarEnConsola()
+        this.receta1.getNumeroIngredientes()
+        this.receta1.getCostoTotal()
     }
 }
 let app = new Main

@@ -8,4 +8,6 @@ export default class Ingrediente {
     getDescripcion(){
         return`${this.cantidad.valor} ${this.cantidad.unidad} de ${this.nombre} $${this.costo}`
     }
+    
+
 }
